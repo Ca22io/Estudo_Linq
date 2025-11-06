@@ -11,7 +11,7 @@ namespace App.Service
         // Utilizando where simples para filtrar alunos da turma 3A Id = 1
         public static void ObterAlunosTurma3A()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n--Relatório 1: Alunos da turma 3A:");
 
             Console.ForegroundColor = ConsoleColor.Gray;
@@ -27,7 +27,7 @@ namespace App.Service
         // Where Composto: Encontrar todos os alunos da Turma "3A" que têm 18 anos ou mais.
         public static void ObterAlunosTurma3ACom18AnosOuMais()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n--Relatório 2: Alunos da turma 3A com 18 anos ou mais:");
             var resultado = alunos.Where(a => a.TurmaId == 1 && a.Idade >= 18);
 
@@ -42,7 +42,7 @@ namespace App.Service
          // Select criar uma lista apenas com os nomes de todos os alunos.
         public static void ObterNomesDeTodosOsAlunos()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n--Relatório 3: Nomes de todos os alunos:");
             var resultado = alunos.Select(a => new Aluno { Nome = a.Nome });
 
@@ -56,7 +56,7 @@ namespace App.Service
         // Select criar uma lista contendo o Nome do aluno e Idade em meses.
         public static void ObterNomeEIdadeEmMesesDeTodosAlunos()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n--Relatório 4: Nome e Idade em meses de todos os alunos:");
             var resultadoIdadeMeses = alunos.Select(a => new
             {
