@@ -30,7 +30,32 @@ A tabela abaixo resume os principais conceitos do LINQ abordados e onde encontr�
 
 O projeto foi estruturado de forma a separar responsabilidades (Princípio do SRP), facilitando a manutenção e a localização de cada funcionalidade do LINQ:
 
-![alt text](image.png)
+```
+    Estudo_Linq/
+    │
+    ├── Data/
+    │   └── BaseDeDados.cs        # Contém os dados mockados em memória.
+    │
+    ├── Enum/
+    │   ├── Disciplinas.cs      # Enum para as disciplinas.
+    │   └── Turno.cs            # Enum para os turnos.
+    │
+    ├── Models/
+    │   ├── Alunos.cs           # Entidade Aluno.
+    │   ├── Nota.cs             # Entidade Nota.
+    │   └── Turma.cs            # Entidade Turma.
+    │
+    ├── Service/
+    │   ├── AgregadoresService.cs       # Métodos de agregação (Sum, Average, Count...).
+    │   ├── AgrupamentoService.cs       # Métodos de agrupamento (GroupBy).
+    │   ├── ConsultasBasicasService.cs  # Filtros e Projeções (Where, Select).
+    │   ├── JuncoesService.cs           # Métodos de junção (Join).
+    │   └── OrdenacaoElementosService.cs # Ordenação e seleção (OrderBy, First, Single...).
+    │
+    ├── Program.cs                # Orquestra a aplicação e exibe os relatórios.
+    └── Estudo_Linq.sln           # Solução do projeto.
+
+```
 
 
 ## ⚙️ Como Clonar e Executar
