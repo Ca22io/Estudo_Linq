@@ -13,6 +13,19 @@ O principal objetivo deste repositório é servir como um portfólio técnico e 
 * **.NET 8**
 * **LINQ** (Sintaxe de Método e Sintaxe de Consulta)
 
+## 📖 Conceitos de LINQ Demonstrados
+
+A tabela abaixo resume os principais conceitos do LINQ abordados e onde encontrá-los no código-fonte:
+
+| Conceito | Métodos / Sintaxes | Onde Encontrar |
+| :--- | :--- | :--- |
+| **Filtros e Projeções** | `Where`, `Select`, Projeção com Objeto Anônimo | `Service/ConsultasBasicasService.cs` |
+| **Ordenação** | `OrderBy`, `OrderByDescending` | `Service/OrdenacaoElementosService.cs` |
+| **Seleção de Elementos** | `First`, `FirstOrDefault`, `Single`, `SingleOrDefault` | `Service/OrdenacaoElementosService.cs` |
+| **Agregação** | `Count`, `Average`, `Max`, `Min`, `Sum` | `Service/AgregadoresService.cs` |
+| **Junção** | `Join` | `Service/JuncoesService.cs` |
+| **Agrupamento** | `GroupBy` | `Service/AgrupamentoService.cs` |
+
 ## 📂 Estrutura do Projeto
 
 O projeto foi estruturado de forma a separar responsabilidades (Princípio do SRP), facilitando a manutenção e a localização de cada funcionalidade do LINQ:
@@ -164,17 +177,3 @@ Ao executar o comando `dotnet run`, você verá a seguinte saída no console, de
     Aluno 5: Média de Notas = 8,50
     Aluno 6: Média de Notas = 6,25
 ```
-
-
-## 📖 Conceitos de LINQ Demonstrados
-
-A tabela abaixo resume os principais conceitos do LINQ abordados e onde encontrá-los no código-fonte:
-
-| Conceito | Métodos / Sintaxes | Onde Encontrar |
-| :--- | :--- | :--- |
-| **Filtros e Projeções** | `Where`, `Select`, Projeção com Objeto Anônimo | `Service/ConsultasBasicasService.cs` |
-| **Ordenação** | `OrderBy`, `OrderByDescending` | `Service/OrdenacaoElementosService.cs` |
-| **Seleção de Elementos** | `First`, `FirstOrDefault`, `Single`, `SingleOrDefault` | `Service/OrdenacaoElementosService.cs` |
-| **Agregação** | `Count`, `Average`, `Max`, `Min`, `Sum` | `Service/AgregadoresService.cs` |
-| **Junção** | `Join` | `Service/JuncoesService.cs` |
-| **Agrupamento** | `GroupBy` | `Service/AgrupamentoService.cs` |
