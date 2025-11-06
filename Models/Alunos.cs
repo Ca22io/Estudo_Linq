@@ -1,4 +1,4 @@
-namespace Estudo_Linq.Models
+namespace App.Models
 {
     public class Aluno
     {

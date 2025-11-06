@@ -1,7 +1,7 @@
-using Estudo_Linq.Enum;
-using Estudo_Linq.Models;
+using App.Enum;
+using App.Models;
 
-namespace Estudo_Linq.Data
+namespace App.Data
 {
     public static class BaseDeDados
     {
@@ -18,12 +18,12 @@ namespace Estudo_Linq.Data
         {
             return new List<Aluno>
             {
-                new() { Id = 101, Nome = "Ana", Idade = 17, TurmaId = 1 },
-                new() { Id = 102, Nome = "Bruno", Idade = 18, TurmaId = 1 },
-                new() { Id = 103, Nome = "Carla", Idade = 17, TurmaId = 1 },
-                new() { Id = 104, Nome = "Daniel", Idade = 18, TurmaId = 2 },
-                new() { Id = 105, Nome = "Elisa", Idade = 19, TurmaId = 2 },
-                new() { Id = 106, Nome = "Felipe", Idade = 18, TurmaId = 2 }
+                new() { Id = 1, Nome = "Ana", Idade = 17, TurmaId = 1 },
+                new() { Id = 2, Nome = "Bruno", Idade = 18, TurmaId = 1 },
+                new() { Id = 3, Nome = "Carla", Idade = 17, TurmaId = 1 },
+                new() { Id = 4, Nome = "Daniel", Idade = 18, TurmaId = 2 },
+                new() { Id = 5, Nome = "Elisa", Idade = 19, TurmaId = 2 },
+                new() { Id = 6, Nome = "Felipe", Idade = 18, TurmaId = 2 }
             };
         }
 
@@ -31,18 +31,18 @@ namespace Estudo_Linq.Data
         {
             return new List<Nota>
             {
-                new() { AlunoId = 101, Disciplina = Disciplinas.Matematica, Valor = 8.5 },
-                new() { AlunoId = 101, Disciplina = Disciplinas.Portugues, Valor = 9.0 },
-                new() { AlunoId = 102, Disciplina = Disciplinas.Matematica, Valor = 6.0 },
-                new() { AlunoId = 102, Disciplina = Disciplinas.Portugues, Valor = 7.5 },
-                new() { AlunoId = 103, Disciplina = Disciplinas.Matematica, Valor = 9.5 },
-                new() { AlunoId = 103, Disciplina = Disciplinas.Portugues, Valor = 8.0 },
-                new() { AlunoId = 104, Disciplina = Disciplinas.Matematica, Valor = 7.0 },
-                new() { AlunoId = 104, Disciplina = Disciplinas.Portugues, Valor = 6.5 },
-                new() { AlunoId = 105, Disciplina = Disciplinas.Matematica, Valor = 8.0 },
-                new() { AlunoId = 105, Disciplina = Disciplinas.Portugues, Valor = 9.0 },
-                new() { AlunoId = 106, Disciplina = Disciplinas.Matematica, Valor = 5.5 },
-                new() { AlunoId = 106, Disciplina = Disciplinas.Portugues, Valor = 7.0 }
+                new() { AlunoId = 1, Disciplina = Disciplinas.Matematica, Valor = 8.5 },
+                new() { AlunoId = 1, Disciplina = Disciplinas.Portugues, Valor = 9.0 },
+                new() { AlunoId = 2, Disciplina = Disciplinas.Matematica, Valor = 6.0 },
+                new() { AlunoId = 2, Disciplina = Disciplinas.Portugues, Valor = 7.5 },
+                new() { AlunoId = 3, Disciplina = Disciplinas.Matematica, Valor = 9.5 },
+                new() { AlunoId = 3, Disciplina = Disciplinas.Portugues, Valor = 8.0 },
+                new() { AlunoId = 4, Disciplina = Disciplinas.Matematica, Valor = 7.0 },
+                new() { AlunoId = 4, Disciplina = Disciplinas.Portugues, Valor = 6.5 },
+                new() { AlunoId = 5, Disciplina = Disciplinas.Matematica, Valor = 8.0 },
+                new() { AlunoId = 5, Disciplina = Disciplinas.Portugues, Valor = 9.0 },
+                new() { AlunoId = 6, Disciplina = Disciplinas.Matematica, Valor = 5.5 },
+                new() { AlunoId = 6, Disciplina = Disciplinas.Portugues, Valor = 7.0 }
             };
         }
     }

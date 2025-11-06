@@ -1,7 +1,7 @@
-using Estudo_Linq.Data;
-using Estudo_Linq.Models;
+using App.Data;
+using App.Models;
 
-namespace Estudo_Linq.Service
+namespace App.Service
 {
 
     public class ConsultasBasicasService

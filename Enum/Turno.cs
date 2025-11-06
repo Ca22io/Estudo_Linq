@@ -1,4 +1,4 @@
-namespace Estudo_Linq.Enum
+namespace App.Enum
 {
     public enum Turno
     {

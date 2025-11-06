@@ -1,6 +1,6 @@
-using Estudo_Linq.Enum;
+using App.Enum;
 
-namespace Estudo_Linq.Models
+namespace App.Models
 {
     public class Turma
     {

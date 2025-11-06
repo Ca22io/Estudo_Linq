@@ -1,8 +1,11 @@
-using Estudo_Linq.Enum;
+using App.Enum;
 
-public class Nota
+namespace App.Models
 {
-    public int AlunoId { get; set; }
-    public Disciplinas Disciplina { get; set; }
-    public double Valor { get; set; }
+    public class Nota
+    {
+        public int AlunoId { get; set; }
+        public Disciplinas Disciplina { get; set; }
+        public double Valor { get; set; }
+    }
 }
